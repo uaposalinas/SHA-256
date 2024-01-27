@@ -1,0 +1,110 @@
+*{
+
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:caviarDreams;
+    transition:all 300ms;
+
+}
+
+body{
+
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    background-color: #18181b;
+    overflow: hidden;
+
+}
+
+.ClickButton{
+
+    width:250px;
+    height:250px;
+    background-image:url(Assets/Heart.png);
+    background-position:center;
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction: column;
+    cursor: pointer;
+    animation:pulse 2s;
+    animation-iteration-count: infinite;
+
+}
+
+.ClickButton p{
+
+    font-family:caviarDreamsBold;
+    font-size:20px;
+ 
+}
+
+.Showing{
+
+    
+    width:350px;
+    height:550px;
+    background-color:#18181b;
+    display: none;
+    border-radius:20px;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    
+}
+
+.Showing .Icon{
+
+    width:70px;
+    height:70px;
+    position:absolute;
+    top:30px;
+    background-image:url(Assets/001.png);
+    background-position:center;
+    background-size:cover;
+
+}
+
+.Showing .ForName{
+
+    position:absolute;
+    top:115px;
+    color:#FFFFFF;
+    font-size:20px;
+    font-family: caviarDreamsBold;
+
+}
+
+.Showing .TextContent{
+
+    width:100%;
+    height:calc(100% - 145px);
+    position:absolute;
+    bottom:0px;;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+
+}
+
+.TextContent tc{
+
+    width:85%;
+    height:85%;
+    font-size:15px;
+    text-align: left;
+    color:#FFFFFF;
+
+}
