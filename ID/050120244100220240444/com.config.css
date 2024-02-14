@@ -1,0 +1,390 @@
+
+
+*{
+
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:caviarDreams;
+    transition:all 300ms;
+    cursor: default;
+
+}
+
+body{
+
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    background-color: #18181b;
+    overflow: hidden;
+    background-color: #f59abe;
+
+}
+
+.ClickButton{
+
+    width:250px;
+    height:250px;
+    background-image:url(Assets/Heart.png);
+    background-position:center;
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction: column;
+    cursor: pointer;
+    animation:pulse 2s;
+    animation-iteration-count: infinite;
+
+}
+
+.ClickButton p{
+
+    font-family:caviarDreamsBold;
+    font-size:20px;
+ 
+}
+
+.Showing{
+
+    
+    width:350px;
+    height:550px;
+    background-color:#18181b;
+    display: none;
+    border-radius:20px;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    
+}
+
+.Certificate{
+
+    width:370px;
+    height:550px;
+    background-image:url(Assets/certificate.png);
+    background-position:center;
+    background-size:cover;
+    position:absolute;
+    border-radius:20px;
+    animation:fadeInRight 0.5s;
+    display:none;
+
+}
+
+.Icon{
+
+    width:70px;
+    height:70px;
+    position:absolute;
+    top:30px;
+    background-image:url(Assets/001.png);
+    background-position:center;
+    background-size:cover;
+
+}
+
+.Showing .ForName{
+
+    position:absolute;
+    top:115px;
+    color:#FFFFFF;
+    font-size:20px;
+    font-family: caviarDreamsBold;
+
+}
+
+.Showing .TextContent{
+
+    width:100%;
+    height:calc(100% - 155px);
+    position:absolute;
+    bottom:10px;;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    padding-bottom:20px;;
+    overflow-y:scroll;
+    overflow-x:hidden;
+
+}
+
+.TextContent::-webkit-scrollbar{
+
+    width:7px;
+    background-color: transparent;   
+
+}
+
+.TextContent::-webkit-scrollbar-thumb{
+
+    width:7px;
+    height:10px;
+    background-color: #f59abe;
+    border-radius:20px;
+
+}
+
+.TextContent tc{
+
+    width:85%;
+    height:85%;
+    font-size:15px;
+    text-align: left;
+    color:#FFFFFF;
+    padding-bottom:20px;
+
+}
+
+
+.NavBarControls{
+
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    position: absolute;
+    top:0px;
+    left:0px;
+    background-color: #FFFFFF;
+    z-index:9;
+
+}
+
+
+.NavBarHeader{
+
+    width:100%;
+    height: 40px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    cursor: pointer
+
+}
+
+.BoldButton{
+
+    position:absolute;
+    top:30px;
+    display: none;
+
+}
+
+.NextButton{
+
+    width:100px;
+    height:30px;
+    position:absolute;
+    bottom:10px;
+    left:calc(50% - 50px);
+    font-family:caviarDreamsBold;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+}
+
+.NextButtonPlayer{
+
+    width:100px;
+    height:30px;
+    position:absolute;
+    bottom:10px;
+    left:calc(50% - 50px);
+    font-family:caviarDreamsBold;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+
+}
+
+.BoldLetter{
+
+    font-family:caviarDreamsBold;
+
+}
+
+.Player{
+
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:9999999;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    background-color: #f59abe;
+
+}
+
+.Player t{
+
+    position:absolute;
+    top:100px;
+    font-family:caviarDreamsBold;
+    margin-bottom:20px;
+    font-size:20px;
+
+
+
+}
+
+.Player .Cover{
+
+    width:250px;
+    height:250px;
+    border-radius:20px;
+    background-image:url(Assets/cover.png);
+    background-size:cover;
+    background-position:center;
+
+}
+
+
+.PausePlayButton{
+
+    width:50px;
+    height:50px;
+    margin-top:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    flex-direction: column;
+
+}
+
+.PausePlayButton i{
+
+    width:100%;
+    height:100%;
+    position:absolute;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-size:25px;
+    animation:fadeInUp 0.5s;
+
+}
+
+.PlayButton{
+
+    display:none;
+
+}
+
+.PauseButton{
+
+    display:flex;
+
+}
+
+.TimeLap{
+
+    position:absolute;
+    bottom:130px;
+
+}
+
+.PlayerSong{
+
+    display:none;
+
+}
+
+
+.Player{
+
+    animation:fadeInRight 0.5s;
+
+}
+
+
+.Gallery{
+
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: #f59abe;
+    z-index:999999;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    animation:fadeInRight 0.5s;
+
+}
+
+.Gallery .Icon{
+
+    position:relative;
+    margin-bottom:50px;
+
+}
+
+.Gallery t{
+
+    font-family:caviarDreamsBold;
+    width:95%;
+    margin-bottom:10px;
+
+}
+
+.Gallery t2{
+
+    width:800px;
+    margin-bottom:10px;
+
+}
+
+.Refresh{
+
+    width:60px;
+    height:60px;
+    position:relative;
+    margin-top:20px;
+
+}
+
+.Refresh i{
+
+    width:60px;
+    height:60px;
+    font-size:30px;;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction: column;
+
+}
